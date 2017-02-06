@@ -22,6 +22,6 @@ COPY 000-default.conf /etc/apache2/sites-available/
 RUN mkdir -p /app && rm -R /var/www/html && ln -s /app /var/www/html
 COPY files/ /app
 
-EXPOSE 80
+EXPOSE 443
 WORKDIR /app
 CMD ["/app.sh"]
